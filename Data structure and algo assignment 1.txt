@@ -1,0 +1,15 @@
+Q.1..for(i=1;i<=n;i++)
+for(j=i;j<n;j++)
+if(printf("hi");
+ans=time comp=O(n^2)
+Q2.
+for(i=1;i<n;i*3)
+{
+for(j=1;j<n;i++)
+{
+printf("hi");
+}
+}
+Ans= time comp=O(nlogn)
+
+
