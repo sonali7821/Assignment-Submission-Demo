@@ -1,0 +1,12 @@
+1.)find the time complexity for the following;
+.a)for(i=1;i<=n;i++)
+          for(j=i;j<n;j++)
+            printf("hi");
+Ans=time comp=O(n^2)
+b.)
+for(i=1;i<n;i*3)
+     for(j=1;j<n;i++)
+      printf("hello");
+Ans= time comp=O(nlogn)
+
+
