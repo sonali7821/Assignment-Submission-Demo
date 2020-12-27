@@ -1,0 +1,102 @@
+Q1.wap deletion from beginning and at any position.
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int i,n,a[10],loc;
+clrscr();
+printf("deletion from the begining of the  array\n");
+printf("\n enter the size of the array");
+scanf("%d",&n);
+printf("\n enter the element of the array:\n");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+
+for(i=n-1;i>=0;i--)
+a[i+1]=a[i];
+a[0]=loc;
+n--;
+for(i=0;i<=n;i++)
+printf("%d \n",a[i]);
+getch();
+}
+
+
+
+
+
+
+
+
+//deletion from any position.
+
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int i,n,a[10],loc;
+clrscr();
+printf("\n enter the size of the array:\n");
+scanf("%d",&n);
+printf("\n enter the element of the array \n");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("enter the location of the element to be deleted \n:");
+scanf("%d",&loc);
+if(loc<0 || loc>=n+1)
+printf("\n deletion not possible:");
+else
+for(i=loc-1;i<n-1;i++)
+a[i]=a[i+1];
+n--;
+for(i=0;i<n;i++)
+printf("%d\ ",a[i]);
+getch();
+}
+
+
+Q2.Write a program for printing array after roratining its  k times towards it left,where k would be taken as user input.
+
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int i,n,a[10],k,j,temp;
+clrscr();
+printf("\n enter the size of the array :");
+scanf("%d",&n);
+printf("\n enter the element of the array :");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("\n enter number of rotation  in left side of the array");
+scanf("%d",&k);
+for(i=0;i<k;i++)
+{
+temp=a[0];
+for(j=0;j<n-1;j++)
+{
+a[j]=a[j+1];
+}
+a[n-1]=temp;
+}
+printf("\n array after rotation is :");
+for(i=0;i<n;i++)
+printf("%d ",a[i]);
+getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
