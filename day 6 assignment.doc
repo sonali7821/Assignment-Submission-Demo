@@ -1,0 +1,38 @@
+Q1.Write a funtion to find the maximum element in the stack.
+
+void push(int x)
+{
+mainstack.push(x);
+if(mainstack.size()==1)
+maxstack.push(x);
+}
+if(x>maxstack.top())
+maxstack.push(x);
+else
+maxstack.push(maxstack.top());
+}
+
+int getmax()
+{
+return maxstack.top();
+}
+
+
+Q2.write a funtion to  find the minimum element in the stack.
+void push(int x)
+{
+stack.push(x);
+if(stack.size()==1)
+minstack.push(x);
+}
+if(x<minstack.top())
+minstack.push(x);
+else
+minstack.push(minstack.top());
+}
+int getmin()
+{
+return minstack.top();
+}
+
+
