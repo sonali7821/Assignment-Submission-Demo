@@ -1,0 +1,68 @@
+
+Q1.write a program implementing insert,delete and display operation of circular queue.
+
+
+void insert(int x)
+{
+if(front=0&&rear=max-1)||(front=rear+1)
+{
+printf("queue overflow")
+return;
+}
+if(front==-1)
+{
+front=0;
+rear=0;
+}
+Else if(rear==max-1)
+rear=0;
+else
+rear=rear+1;
+cqueue[rear]=x;
+}
+ 
+
+
+
+void delete()
+{
+if(front==-1)
+printf("queue underflow");
+return;
+}
+x=cqueue[front]
+if(front==rear)
+{
+front=-1;
+rear=-1;
+}
+else
+{
+if(front==max-1)
+front=0;
+else
+front=front+1;
+}
+}
+
+void display()
+{
+Int I;
+If(front>rear)
+for(i=front;i<max;i++)
+{
+Pritnf(“%d”,cqueue[i];
+}
+For(i=0;i<rear;i++)
+{
+Printf(“%d”,cqueue[i]);
+}
+Else
+{
+For(i=front;i<=rear;i++)
+{
+
+Printf(“%d”,cqueue[i]);
+
+}
+}
