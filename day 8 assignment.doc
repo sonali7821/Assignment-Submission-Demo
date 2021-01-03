@@ -1,0 +1,118 @@
+Q1.
+#include<stdio.h>
+int main()
+{
+Lon int n,mul,I;
+Printf(“enter the in binary form  and one decimal:”);
+scanf(“%lf”,&n)
+for(i=0;i<n;i++)
+mul=n*n[i+n];
+prinf(“the number in output :”,mul);
+}
+
+
+
+
+
+
+
+
+
+Q2.implement push ,pop and find the minimum elemnt in the stack in
+O(1)time complexity.
+
+
+#include<stdio.h>
+int stack[50],top=-1,n;
+void push(int x);
+void pop();
+void display();
+int main()
+{
+clrscr();
+printf("\n enter the size of the array:");
+scanf("%d",&n);
+push(90);
+push(23);
+push(45);
+push(56);
+
+
+push(77);
+//pop();
+display();
+pop();
+pop();
+pushmin();
+getmin();
+display();
+
+getch();
+}
+
+
+
+void push(int x)
+{
+if(top==n-1)
+{
+printf("\n stacvk overflow:");
+
+return;
+}
+stack[++top]=x;
+
+
+}
+
+void pop()
+{
+int x;
+
+if(top==-1)
+{
+printf("underflow:");
+return;
+
+}
+x=stack[top--];
+printf("deleted item:%d\n,",x);
+
+}
+
+
+void display()
+{
+int i;
+if(top==-1)
+{
+printf("no element to be display:");
+return;
+}
+for(i=top;i>=0;i--)
+{
+printf("----\n");
+printf("|%d|\n",stack[i]);
+}
+printf("----\n");
+
+}
+
+void pushmin(x)
+{
+stack.push(x);
+if(stack.n()==1)
+minstack.push(x);
+
+}
+if(x<minstack.top())
+minstack.push();
+else
+minstack.push(minstack.top());
+}
+
+int getmin()
+{
+return minstack.top();
+
+}
